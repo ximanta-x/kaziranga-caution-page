@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kaziranga Site</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo-link">
+                    <img src="/assets/logo.svg" alt="Site Logo" class="logo">
+                    <span class="site-title">Kaziranga Site</span>
+                </a>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/purpose.html">Purpose</a></li>
+                        <li><a href="/notice.html">Legal Notice</a></li>
+                        <li><a href="/projects.html">Projects</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h1>Contact & Communication</h1>
+            
+            <div class="contact-info">
+                <div class="contact-notice">
+                    <h3>Communication Protocol</h3>
+                    <p>All formal communications should be made in writing through the proper channels. This platform encourages lawful, documented correspondence for clear resolution of matters.</p>
+                </div>
+                
+                <h2>Contact Form</h2>
+                <p>Use this form for formal written communications regarding content, corrections, or other matters related to this platform.</p>
+                
+                <form id="contactForm" class="contact-form" action="/api/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="content_correction">Content Correction</option>
+                            <option value="legal_notice">Legal Notice</option>
+                            <option value="general_inquiry">General Inquiry</option>
+                            <option value="project_information">Project Information</option>
+                            <option value="other">Other Matter</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Detailed Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <p class="form-note">Please provide complete details and any relevant references or documentation.</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reference">Reference Number (if applicable)</label>
+                        <input type="text" id="reference" name="reference">
+                        <p class="form-note">Include any existing case numbers, document references, or previous communication identifiers.</p>
+                    </div>
+                    
+                    <div class="form-notice">
+                        <p><strong>Important:</strong> This form submits to a server-side processing endpoint. All communications are handled through proper backend systems with no client-side bot integrations.</p>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Formal Communication</button>
+                </form>
+                
+                <div class="communication-guide">
+                    <h3>Communication Guidelines</h3>
+                    <ul class="bullet-list">
+                        <li>Always use formal written communication</li>
+                        <li>Include complete contact information</li>
+                        <li>Reference specific content or concerns</li>
+                        <li>Provide documentation when applicable</li>
+                        <li>Allow reasonable time for response</li>
+                        <li>Follow up through proper channels if needed</li>
+                    </ul>
+                </div>
+                
+                <div class="legal-reminder">
+                    <h3>Legal Reminder</h3>
+                    <p>This platform operates independently with no government affiliation. For official matters regarding the Kaziranga region, please contact the appropriate government authorities directly through their official channels.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-disclaimer">
+                    <p><strong>Non-Official Disclaimer:</strong> This is an independent website maintained by Ximanta (Student). No government endorsement or affiliation exists.</p>
+                    <div class="signature">
+                        <img src="/assets/signature.png" alt="Signature" class="signature-img">
+                        <p>Ximanta</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/terms.html">Terms of Use</a></li>
+                        <li><a href="/notice.html">Legal Notice</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Kaziranga Site. All rights reserved.</p>
+                    <p>Content subject to correction upon proper lawful communication.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
